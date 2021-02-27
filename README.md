@@ -1,2 +1,2 @@
-# vue_shop
+# vueShop
 vueShop project
