@@ -67,9 +67,9 @@ export default {
         }
         const { data: res } = await this.$http.post('login', this.loginForm)
         if (res.meta.status !== 200) {
-          return this.$message.error('登陸失敗')
+          return this.$message.error('登录失败')
         }
-        this.$message.success('登陸成功')
+        this.$message.success('登录成功')
         window.sessionStorage.setItem('token', res.data.token)
         // 跳轉到/home
         this.$router.push('/home')
